@@ -1,0 +1,105 @@
+@import 'weather-icons-wind.css';
+@import 'weather-icons-wind.min.css';
+@import 'weather-icons.css';
+
+
+body {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background: #276ee8;
+    font-family: Cabin;
+    font-size: 111%;
+    text-align: center;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+.weather-widget {
+    background: #000000d9;
+    color: white;
+    padding: 2em;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(1px);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 50px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 111%;
+    width: calc(100% - 100px);
+}
+
+button{
+    margin: 0.4em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 42px;
+    width: 42px;
+    background: #7c7c7c2b;
+    color:white;
+    cursor: pointer;
+    transition: 0.25 ease-in-out;
+}
+
+button:hover {
+    background: #7c7c7c7b; 
+}
+
+.main-info {
+    padding: 0 2em 2em 2em;
+    margin: 2em 0;
+    border-bottom: 1px #ccc solid;
+}
+
+.secondary-info {
+    display: inline-flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pressure-info {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.wind-info {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.humidity-info {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.sunrise-sunset {
+    display: inline-flex;
+    gap: 80px;
+    padding: 0em 2em 2em 2em;
+    margin: 2em 0;
+    border-bottom: 1px #ccc solid;
+}
+
+.wi-sunrise {
+    font-size: 35px;
+}
+
+.wi-sunset {
+    font-size: 35px;
+}
+

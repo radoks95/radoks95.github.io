@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-widget">
+        <div class="search">
+            <input type="text" id="search-bar" placeholder="Search">
+            <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg></button>
+        </div>
+        <div class="weather">
+            <div class="main-info">
+                <h1 class="city">London</h1>
+                <h2 class="temperature">10 °C</h2>
+                <div class="feels-like">9 °C</div>
+                <div class="flex">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-conditions" class="icon" />
+                    <div class="description">Rainy</div>
+                </div>
+            </div>
+            <div class="secondary-info">
+                <div class="pressure-info">
+                    <i class="wi wi-barometer"></i>
+                    <div class="pressure">Pressure 1005 hPa</div>
+                </div>
+                <div class="wind-info">
+                    <i class="wi wi-strong-wind"></i>
+                    <div class="wind-speed">Wind speed 4</div>
+                </div>
+                <div class="humidity-info">
+                    <i class="wi wi-humidity"></i>
+                    <div class="humidity">Humidity 64 %</div>
+                </div>
+            </div>
+            <div class="sunrise-sunset">
+                <div class="sunrise-info">
+                    <i class="wi wi-sunrise"></i>
+                    <div class="sunrise">Sunrise at 06:00</div>
+                </div>
+                <div class="sunset-info">
+                    <i class="wi wi-sunset"></i>
+                    <div class="sunset">Sunset at 21:00</div>
+                </div>
+            </div>
+            <div class="time-info">
+                <div class="local-time">Local time:</div>
+                <div class="date">Wednesday, 13 April 2022</div>
+                <div class="time">Local Time: 22:41</div>
+            </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+</body>
+</html>
